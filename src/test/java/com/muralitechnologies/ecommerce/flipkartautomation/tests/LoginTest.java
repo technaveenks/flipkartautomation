@@ -39,7 +39,7 @@ public class LoginTest extends BaseTest{
 		log.info("Test Started");
 		String Text = hPage.getText();
 		System.out.println("Text Value = " +Text);
-		Assert.assertEquals(Text, "Login & Signu");
+		Assert.assertEquals(Text, "Login & Signup");
 		srPage = hPage.enterSearchText("iphone");
 		log.info("Test Executed Successfully");
 		Thread.sleep(4000);
@@ -50,7 +50,7 @@ public class LoginTest extends BaseTest{
 	public void verify(){
 		SoftAssert sAssert = new SoftAssert();
 		System.out.println("Step 1");
-		sAssert.assertEquals("Hello", "hello");
+		sAssert.assertEquals("Hello", "Hello");
 		System.out.println("Step 2");
 		System.out.println("Step 3");
 		System.out.println("Step 4");
